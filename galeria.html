@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel Szeleta Galéria. Tekintse meg a környezetet, épületet, belső teret, szolgáltatásokat és látnivalókat képeinken keresztül.">
+    <meta name="keywords" content="hotel, galéria, képek, szolgáltatások, látnivalók, belső terek, épület, környezet, Szeleta">
+    <title>Galéria - Hotel Szeleta</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ac7a56;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #b5651d;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* Tartalmi szakaszok */
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #b5651d;
+        }
+
+        .section ul {
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section ul li {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+            color: #555;
+            transition: transform 0.3s ease;
+        }
+
+        .section ul li:hover {
+            transform: translateY(-5px);
+        }
+
+        .section ul li strong {
+            color: #b5651d;
+        }
+
+        /* Képgaléria stílus */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin: 20px 0;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Hotel Szeleta logo">
+</header>
+
+<nav>
+    <a href="index.html">Főoldal</a>
+    <a href="rulunk.html">Rólunk</a>
+    <a href="szolgaltatasok.html">Szolgáltatások</a>
+    <a href="latnivalok.html">Látnivalók</a>
+    <a href="galeria.html">Galéria</a>
+    <a href="arak.html">Árak</a>
+    <a href="ajanlatfoglalas.html">Ajánlat/Foglalás</a>
+    <a href="eljutas.html">Eljutás</a>
+</nav>
+
+<section class="section">
+    <h2>Galéria</h2>
+    
+    <h3>A Hotel Szeleta környezete</h3>
+    <div class="image-gallery">
+        <img src="kornyezet1.jpg" alt="Környezet 1">
+        <img src="kornyezet2.jpg" alt="Környezet 2">
+        <img src="kornyezet3.jpg" alt="Környezet 3">
+        <img src="kornyezet4.jpg" alt="Környezet 4">
+    </div>
+
+    <h3>A Hotel Szeleta kívülről</h3>
+    <div class="image-gallery">
+        <img src="kulso.jpg" alt="Kívülről 1">
+        <img src="kulso2.jpg" alt="Kívülről 2">
+        <img src="kulso3ú.jpg" alt="Kívülről 3">
+        <img src="kulso4.jpg" alt="Kívülről 4">
+    </div>
+
+    <h3>A Hotel Szeleta belülről</h3>
+    <div class="image-gallery">
+        <img src="belso1.jpg" alt="Belső 1">
+        <img src="belso2.jpg" alt="Belső 2">
+        <img src="belso3.jpg" alt="Belső 3">
+        <img src="belso4ű.jpg" alt="Belső 4">
+    </div>
+
+    <h3>A Hotel Szeleta szolgáltatásai</h3>
+    <p>Szolgáltatásainkról bővebb leírást további képekkel itt olvashat!</p>
+    <div class="image-gallery">
+        <img src="szolgaltatas1.jpg" alt="Szolgáltatás 1">
+        <img src="szolgaltatas2.jpg" alt="Szolgáltatás 2">
+        <img src="szolgaltatas3.jpg" alt="Szolgáltatás 3">
+        <img src="szolgaltatas4.jpg" alt="Szolgáltatás 4">
+    </div>
+
+    <h3>Látnivalók</h3>
+   
+
+    <h4>Látnivalók a közelben</h4>
+    <div class="image-gallery">
+        <img src="latnivalo_k_1.jpg" alt="Látnivaló közel 1">
+        <img src="latnivalo_k_2.jpg" alt="Látnivaló közel 2">
+        <img src="latnivalo_k_3.jpg" alt="Látnivaló közel 3">
+        <img src="latnivalo_k_4.jpg" alt="Látnivaló közel 4">
+    </div>
+
+    <h4>Látnivalók Lillafüreden (1 km)</h4>
+    <div class="image-gallery">
+        <img src="latnivalo_l_1.jpg" alt="Látnivaló Lillafüred 1">
+        <img src="latnivalo_l_2.jpg" alt="Látnivaló Lillafüred 2">
+        <img src="latnivalo_l_3.jpg" alt="Látnivaló Lillafüred 3">
+        <img src="latnivalo_l_4.jpg" alt="Látnivaló Lillafüred 4">
+    </div>
+
+    <h4>Látnivalók Miskolc-Tapolcán (17 km)</h4>
+    <div class="image-gallery">
+        <img src="latnivalo_mt_1.jpg" alt="Látnivaló Miskolc-Tapolca 1">
+        <img src="latnivalo_mt_2.jpg" alt="Látnivaló Miskolc-Tapolca 2">
+        <img src="latnivalo_mt_3.jpg" alt="Látnivaló Miskolc-Tapolca 3">
+        <img src="latnivalo_mt_4.jpg" alt="Látnivaló Miskolc-Tapolca 4">
+    </div>
+    
+</section>
+
+<footer>
+    <p>Hotel Szeleta *** - 357 Miskolc, Szeleta u. 12. | Telefon: +36 46/530-130</p>
+</footer>
+
+</body>
+</html>

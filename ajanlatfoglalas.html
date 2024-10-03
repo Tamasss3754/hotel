@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel Szeleta, a Bükki Nemzeti Park területén, modern szolgáltatásokkal, családbarát szállással és különleges ajánlatokkal.">
+    <meta name="keywords" content="hotel, szeleta, bükki nemzeti park, szállás, család, programok, ajánlatok, szilveszter">
+    <title>Hotel Szeleta - Pihenés és Kaland a Bükkben</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Alap stílusok */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Navigációs sáv */
+        header {
+            background-color: #ac7a56;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px 0;
+            background-color: #b5651d;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* Fő tartalom */
+        .hero {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hotel_hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        /* Űrlap stílusok */
+        form {
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 1em;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 1em;
+            margin-top: 1em;
+            background-color: #ac7a56;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #b5651d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Szeleta</h1>
+        <nav>
+            <a href="#">Főoldal</a>
+            <a href="#">Rólunk</a>
+            <a href="#">Szolgáltatások</a>
+            <a href="#">Látnivalók</a>
+            <a href="#">Galéria</a>
+            <a href="#">Árak</a>
+            <a href="#">Ajánlat/Foglalás</a>
+            <a href="#">Eljutás</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Pihenés és Kaland a Bükkben</h1>
+            <p>Fedezze fel a Bükki Nemzeti Park szépségeit!</p>
+        </div>
+    </div>
+
+    <form>
+        <h2>Ajánlat/Foglalás</h2>
+        <label for="arrival">Érkezés napja *</label>
+        <input type="date" id="arrival" name="arrival" required>
+        
+        <label for="departure">Távozás napja *</label>
+        <input type="date" id="departure" name="departure" required>
+        
+        <label for="address">Cím *</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="email">E-mail cím</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="phone">Telefonszám</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="room">Szobatípus *</label>
+        <select id="room" name="room" required>
+            <option value="single">Egyágyas</option>
+            <option value="double">Kétágyas</option>
+            <option value="suite">Lakosztály</option>
+        </select>
+        
+        <label for="guests">Személyek száma *</label>
+        <input type="number" id="guests" name="guests" required>
+        
+        <label for="payment">Fizetési mód</label>
+        <select id="payment" name="payment">
+            <option value="cash">Készpénz</option>
+            <option value="card">Bankkártya</option>
+            <option value="transfer">Előreutalás</option>
+        </select>
+        
+        <label for="notes">Megjegyzés</label>
+        <textarea id="notes" name="notes"></textarea>
+        
+        <button type="submit">Küldés</button>
+    </form>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Az űrlap sikeresen elküldve!');
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel Szeleta, a Bükki Nemzeti Park területén, modern szolgáltatásokkal, családbarát szállással és különleges ajánlatokkal.">
+    <meta name="keywords" content="hotel, szeleta, bükki nemzeti park, szállás, család, programok, ajánlatok, szilveszter">
+    <title>Hotel Szeleta - Pihenés és Kaland a Bükkben</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Alap stílusok */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Navigációs sáv */
+        header {
+            background-color: #ac7a56;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px 0;
+            background-color: #b5651d;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* Fő tartalom */
+        .hero {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hotel_hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        /* Űrlap stílusok */
+        form {
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 1em;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 1em;
+            margin-top: 1em;
+            background-color: #ac7a56;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #b5651d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Szeleta</h1>
+        <nav>
+            <a href="index.html">Főoldal</a>
+            <a href="rulunk.html">Rólunk</a>
+            <a href="szolgaltatasok.html">Szolgáltatások</a>
+            <a href="latnivalok.html">Látnivalók</a>
+            <a href="galeria.html">Galéria</a>
+            <a href="arak.html">Árak</a>
+            <a href="ajanlatfoglalas.html">Ajánlat/Foglalás</a>
+            <a href="eljutas.html">Eljutás</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Pihenés és Kaland a Bükkben</h1>
+            <p>Fedezze fel a Bükki Nemzeti Park szépségeit!</p>
+        </div>
+    </div>
+
+    <form>
+        <h2>Ajánlat/Foglalás</h2>
+        <label for="arrival">Érkezés napja *</label>
+        <input type="date" id="arrival" name="arrival" required>
+        
+        <label for="departure">Távozás napja *</label>
+        <input type="date" id="departure" name="departure" required>
+        
+        <label for="address">Cím *</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="email">E-mail cím</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="phone">Telefonszám</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="room">Szobatípus *</label>
+        <select id="room" name="room" required>
+            <option value="single">Egyágyas</option>
+            <option value="double">Kétágyas</option>
+            <option value="suite">Lakosztály</option>
+        </select>
+        
+        <label for="guests">Személyek száma *</label>
+        <input type="number" id="guests" name="guests" required>
+        
+        <label for="payment">Fizetési mód</label>
+        <select id="payment" name="payment">
+            <option value="cash">Készpénz</option>
+            <option value="card">Bankkártya</option>
+            <option value="transfer">Előreutalás</option>
+        </select>
+        
+        <label for="notes">Megjegyzés</label>
+        <textarea id="notes" name="notes"></textarea>
+        
+        <button type="submit">Küldés</button>
+    </form>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Az űrlap sikeresen elküldve!');
+        });
+    </script>
+</body>
+</html>

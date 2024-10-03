@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Látnivalók és programok a Hotel Szeleta közelében. Fedezze fel a Bükk természeti kincseit és a helyi nevezetességeket.">
+    <meta name="keywords" content="látnivalók, programok, Hotel Szeleta, Hámori Mászópark, Kohászati Múzeum, Szeleta-Barlang, Miskolci Állatkert, Lillafüred, Miskolc-Tapolca">
+    <title>Látnivalók és Programok - Hotel Szeleta</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ac7a56;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #b5651d;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* Tartalmi szakaszok */
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #b5651d;
+        }
+
+        .section ul {
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section ul li {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+            color: #555;
+            transition: transform 0.3s ease;
+        }
+
+        .section ul li:hover {
+            transform: translateY(-5px);
+        }
+
+        .section ul li strong {
+            color: #b5651d;
+        }
+
+        /* Képgaléria stílus */
+        .image-gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Hotel Szeleta logo">
+</header>
+
+<nav>
+    <a href="index.html">Főoldal</a>
+    <a href="rulunk.html">Rólunk</a>
+    <a href="szolgaltatasok.html">Szolgáltatások</a>
+    <a href="latnivalok.html">Látnivalók</a>
+    <a href="galeria.html">Galéria</a>
+    <a href="arak.html">Árak</a>
+    <a href="ajanlatfoglalas.html">Ajánlat/Foglalás</a>
+    <a href="eljutas.html">Eljutás</a>
+</nav>
+
+<section class="section">
+    <h2>Látnivalók és Programok a Közelben</h2>
+    <ul>
+        <li><strong>Hámori Mászópark, Kohászati Múzeum, Szeleta-barlang, Miskolci Állatkert:</strong> Fedezze fel a környék kalandparkját és múzeumait!</li>
+        <div class="image-gallery">
+            <img src="maszopark.jpg" alt="Hámori Mászópark">
+            <img src="muzium.jpg" alt="Kohászati Múzeum">
+        </div>
+
+        <li><strong>Diósgyőri vár és várfürdő, lillafüredi pisztrángos, Újmassai őskohó, Szentléleki pálos kolostorrom:</strong> Történelmi látnivalók és természeti csodák.</li>
+        <div class="image-gallery">
+            <img src="var.jpg" alt="Diósgyőri vár">
+            <img src="pisztrang.jpg" alt="Lillafüredi pisztrángos">
+        </div>
+
+        <li><strong>Látnivalók Lillafüreden (1 km):</strong> Hámori tó, Palotaszálló, Szinva-patak vízesés, Anna-mésztufabarlang, Szent István-cseppkőbarlang, erdei kisvasút.</li>
+        <div class="image-gallery">
+            <img src="to.jpg" alt="Hámori tó">
+            <img src="szallo.jpg" alt="Palotaszálló">
+        </div>
+
+        <li><strong>Miskolc-Tapolca (17 km):</strong> Barlangfürdő, bobpálya, kalandtúrapark, csónakázó tó és park.</li>
+        <div class="image-gallery">
+            <img src="furdo.jpg" alt="Barlangfürdő">
+            <img src="palya.jpg" alt="Bobpálya">
+        </div>
+
+        <li><a href="https://miskolc.hu" target="_blank">Miskolc.hu - Miskolc látnivalói</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>Hotel Szeleta *** - 357 Miskolc, Szeleta u. 12. | Telefon: +36 46/530-130</p>
+</footer>
+
+</body>
+</html>
